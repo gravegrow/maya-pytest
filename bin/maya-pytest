@@ -1,0 +1,6 @@
+#!/bin/bash
+
+THIS_PATH=$(dirname "${BASH_SOURCE[0]}")
+SCRIPT_PATH=$(realpath "$THIS_PATH/../maya_pytest/maya_pytest.py")
+
+uv run --quiet --script $SCRIPT_PATH $@
